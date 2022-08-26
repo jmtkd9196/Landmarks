@@ -155,8 +155,8 @@
 		F3FE62DB28B78EFB00B0C8F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F34F8B2028B957ED00DEEE40 /* Hikes */,
 				F3FE62AC28B7724E00B0C8F8 /* ContentView.swift */,
+				F34F8B2028B957ED00DEEE40 /* Hikes */,
 				F34F8B1B28B947F000DEEE40 /* Badges */,
 				F35E8D7D28B8F19B00B6828C /* Landmarks */,
 				F35E8D7C28B8F12800B6828C /* Helpers */,
