@@ -18,6 +18,9 @@ final class ModelData: ObservableObject {
             //landmark의 공통된 것을 grouping하여 dictionary로 만든다.
         )
     }
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
