@@ -17,10 +17,13 @@ struct CategoryHome: View {
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
+                    .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
+                //리스트에 기본적으로 존재하는 패딩을 줄이기 위해.
             }
             .navigationTitle("Featured")
         }
